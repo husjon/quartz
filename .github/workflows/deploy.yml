@@ -31,6 +31,8 @@ jobs:
         run: pwd
       - name: list files
         run: ls -lah
+      - name: list files
+        run: ls -lah quartz/
       - name: Build Quartz
         run: npx quartz build
       - name: Upload artifact
