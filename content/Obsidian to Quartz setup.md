@@ -5,6 +5,7 @@ updated: 2023-01-21T01:21:13+01:00
 tags:
   - obsidian
   - quartz
+  - quartz-v3
 ---
 ## Introduction
 The other day I decided that I'd wanted to start publishing some of my ideas.  
