@@ -1,46 +1,21 @@
 ---
-title: Welcome to Quartz 4
+title: ""
+enableToc: false
+created: 2022-11-22T20:37:22+01:00
+updated: 2023-03-20T16:14:40+01:00
 ---
 
-Quartz is a fast, batteries-included static-site generator that transforms Markdown content into fully functional websites. Thousands of students, developers, and teachers are [[showcase|already using Quartz]] to publish personal notes, wikis, and [digital gardens](https://jzhao.xyz/posts/networked-thought/) to the web.
+Hi and welcome to my little corner on the internet.  
+Introverted, self-taught programmer with different hobbies and ideas.  
+I do have an [[About me]] section if you want to know more, alternatively here are some [[Hobbies]] 🤗
 
-## 🪴 Get Started
+Over time I will be trying to do some write-ups of different ideas I have / projects I’ve worked on.
 
-Quartz requires **at least [Node](https://nodejs.org/) v18.14** to function correctly. Ensure you have this installed on your machine before continuing.
+For now I'd like to share my [[Obsidian to Quartz setup]] and my little [[Amazon Kindle Download Helper]].
 
-Then, in your terminal of choice, enter the following commands line by line:
+If you'd like to ask me a question of leave a comment, please [create an issue](https://github.com/husjon/husjon/issues/new) or message me on <a rel="me" href="https://fosstodon.org/@husjon">Mastodon</a> and I'll get back to you as soon as I can.
 
-```shell
-git clone https://github.com/jackyzha0/quartz.git
-cd quartz
-git checkout v4
-npm i
-npx quartz create
-```
+And if got all the way here, Thank you 💗
 
-This will guide you through initializing your Quartz with content. Once you've done so, see how to:
 
-1. [[authoring content|Author content]] in Quartz
-2. [[configuration|Configure]] Quartz's behaviour
-3. Change Quartz's [[layout]]
-4. [[build|Build and preview]] Quartz
-5. [[hosting|Host]] Quartz online
-
-> [!info]
-> Coming from Quartz 3? See the [[migrating from Quartz 3|migration guide]] for the differences between Quartz 3 and Quartz 4 and how to migrate.
-
-## 🔧 Features
-
-- [[Obsidian compatibility]], [[full-text search]], [[graph view]], [[wikilinks]], [[backlinks]], [[Latex]], [[syntax highlighting]], [[popover previews]], and [many more](./features) right out of the box
-- Hot-reload for both configuration and content
-- Simple JSX layouts and [[creating components|page components]]
-- [[SPA Routing|Ridiculously fast page loads]] and tiny bundle sizes
-- Fully-customizable parsing, filtering, and page generation through [[making plugins|plugins]]
-
-For a comprehensive list of features, visit the [features page](/features). You can read more about the _why_ behind these features on the [[philosophy]] page and a technical overview on the [[architecture]] page.
-
-### 🚧 Troubleshooting + Updating
-
-Having trouble with Quartz? Try searching for your issue using the search feature. If you haven't already, [[upgrading|upgrade]] to the newest version of Quartz to see if this fixes your issue.
-
-If you're still having trouble, feel free to [submit an issue](https://github.com/jackyzha0/quartz/issues) if you feel you found a bug or ask for help in our [Discord Community](https://discord.gg/cRFFHYye7t).
+[mastodon_link]: https://fosstodon.org/@husjon
