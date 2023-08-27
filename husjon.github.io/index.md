@@ -2,7 +2,7 @@
 title: "Welcome"
 enableToc: false
 created: 2022-11-22T20:37:22+01:00
-updated: 2023-08-27T22:01:32+02:00
+updated: 2023-08-27T23:39:53+02:00
 ---
 
 Hi and welcome to my little corner on the internet.  
