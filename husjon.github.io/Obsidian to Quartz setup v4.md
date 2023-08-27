@@ -5,9 +5,17 @@ tags:
   - quartz
   - quartz-v4
 created: 2023-08-27T21:41:34+02:00
-updated: 2023-08-27T23:39:53+02:00
+updated: 2023-08-27T23:55:15+02:00
 draft: true
 ---
+
+## Introduction
+This is a followup from [[Obsidian to Quartz setup]] after Quartz updated to version 4.
+
+[Jacky Zhao](https://github.com/jackyzha0) has done amazing work with reducing dependencies of the Quartz project and now uses `npx` to build, publish and do local development.
+
+
+
 
 ```bash
 #!/bin/bash
