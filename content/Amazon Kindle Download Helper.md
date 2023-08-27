@@ -5,7 +5,7 @@ tags:
   - javascript
   - tampermonkey
 created: 2022-11-27T19:35:16+01:00
-updated: 2023-01-21T16:46:33+01:00
+updated: 2023-08-27T22:01:31+02:00
 ---
 
 After having acquired a few books for my Kindle from Amazon, I've found that backing these up is extremely tedious.  

@@ -1,6 +1,6 @@
 ---
 created: 2023-07-24T16:25:18+02:00
-updated: 2023-07-24T21:36:44+02:00
+updated: 2023-08-27T22:01:32+02:00
 title: Creality K1 and MQTT
 enableToc: true
 tags:

@@ -1,7 +1,7 @@
 ---
 title: Modelling with Blender for the 3D printer
 created: 2023-07-19T19:53:11+02:00
-updated: 2023-08-12T22:47:59+02:00
+updated: 2023-08-27T22:01:32+02:00
 tags:
  - 3d_printing
  - 3d_modelling
