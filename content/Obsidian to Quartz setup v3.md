@@ -1,5 +1,5 @@
 ---
-title: Obsidian to Quartz setup
+title: Obsidian to Quartz setup v3
 created: 2022-11-25T23:03:07+01:00
 updated: 2023-08-27T23:39:53+02:00
 tags:
