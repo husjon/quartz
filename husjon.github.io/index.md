@@ -11,7 +11,7 @@ I do have an [[About me]] section if you want to know more, alternatively here a
 
 Over time I will be trying to do some write-ups of different ideas I have / projects I’ve worked on.
 
-For now I'd like to share my [[Obsidian to Quartz setup v3]] and my little [[Amazon Kindle Download Helper]].
+For now I'd like to share my [[Obsidian to Quartz setup]] and my little [[Amazon Kindle Download Helper]].
 
 If you'd like to ask me a question of leave a comment, please [create an issue](https://github.com/husjon/husjon/issues/new) or message me on <a rel="me" href="https://fosstodon.org/@husjon">Mastodon</a> and I'll get back to you as soon as I can.
 
