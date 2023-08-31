@@ -17,9 +17,11 @@ HOOKS_SUCCESS=true
         echo
     done
 
-    if [ $HOOKS_SUCCESS ]; then
+    if [ "$HOOKS_SUCCESS" = true ]; then
         cd "${QUARTZ_FOLDER}" || exit 1
 
-        npx quartz sync
+        npx quartz sync && exit 0
     fi
-) | tee /tmp/quartz_pulish.log || read -r
+
+    read -r
+) | tee /tmp/quartz_pulish.log
