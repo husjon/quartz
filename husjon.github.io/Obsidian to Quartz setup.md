@@ -5,15 +5,14 @@ tags:
   - quartz
   - quartz-v4
 created: 2023-08-27T21:41:34+02:00
-updated: 2023-08-31T19:03:33+02:00
+updated: 2023-08-31T19:05:02+02:00
 ---
 
 ## Introduction
 I originally wrote about my [[Obsidian to Quartz setup v3]] at the end of last year.  
 Now since Quartz v4 is out, here is my current setup.
 
-[Jacky Zhao](https://github.com/jackyzha0) has done amazing work with reducing dependencies of the Quartz project and now uses `npx` to build, publish and do local development instead of previously using a `go` and in particular the `hugo-obsidian` package.
-
+First of, [Jacky Zhao](https://github.com/jackyzha0) has done amazing work with reducing dependencies of the Quartz project and now uses `npx` to build, publish and do local development instead of previously using a `go` and in particular the `hugo-obsidian` package.  
 This also reduced the publishing script I created for the previous setup ([[Obsidian to Quartz setup v3#Publishing my notes.|Publishing my notes]]).
 
 
