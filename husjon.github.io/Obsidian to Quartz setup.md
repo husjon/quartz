@@ -5,7 +5,7 @@ tags:
   - quartz
   - quartz-v4
 created: 2023-08-27T21:41:34+02:00
-updated: 2023-08-31T18:54:31+02:00
+updated: 2023-08-31T18:56:17+02:00
 ---
 
 ## Introduction
@@ -17,7 +17,9 @@ This also reduced the publishing script I created for the previous setup ([[Obsi
 
 
 ## Upgrading
-I would recommend reading the https://quartz.jzhao.xyz/migrating-from-Quartz-3 guide from the documentation.
+If you're upgrading I would recommend reading the https://quartz.jzhao.xyz/migrating-from-Quartz-3 guide from the documentation.
+
+If you're new to Quartz, check out Getting Started section on https://quartz.jzhao.xyz/.
 
 
 
