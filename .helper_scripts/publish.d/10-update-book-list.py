@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import datetime
+import yaml
 import glob
 import os
 import re
@@ -31,15 +33,7 @@ for book in sorted(glob.glob(f'{books_folder}/*.md')):
     match = re.match(pattern=frontmatter_pattern, string=content)
     frontmatter_content = match.groupdict().get('content')
 
-    kv_pattern = r'^(?P<key>.*?): "?(?P<value>.*?)"?$'
-
-    book_frontmatter = dict()
-    for kv_match in re.finditer(pattern=kv_pattern, string=frontmatter_content, flags=re.MULTILINE):
-        key, value = kv_match.groups()
-        if key == 'tags':
-            value = value.replace(', ]', ']').replace('[', '').replace(']', '')
-            value = value.split(', ')
-        book_frontmatter[key] = value
+    book_frontmatter = yaml.safe_load(frontmatter_content)
 
     books.append(book_frontmatter)
 
@@ -52,11 +46,15 @@ with open(quartz_books_summary_file, 'w+') as fh:
         '---',
         '',
     ]
-    output.append(f'| Title | Author | My rating | Read |')
+    output.append(f'| Title | Author | My rating | Read (Year-Month-Day) |')
     output.append(f'| ----- | ------ | --------- | ---- |')
     for book in books:
         if "currently-reading" in book['tags']:
             book['date_read'] = 'Currently Reading'
+        else:
+            book['date_read'] = book['date_read'].strftime('%Y-%m-%d')
+
         output.append('| {title:<60} | {author:<30} | {rating} | {date_read:<10} |'.format(**book))
+
 
     fh.write('\n'.join(output))
