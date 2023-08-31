@@ -19,5 +19,5 @@ set -e  # Exit on Error
 
     cd "${QUARTZ_FOLDER}" || exit 1
 
-    npx quartz sync || read -r
-) > /tmp/quartz_pulish.log
+    npx quartz sync
+) > /tmp/quartz_pulish.log || read -r
