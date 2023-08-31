@@ -5,7 +5,7 @@ tags:
   - quartz
   - quartz-v4
 created: 2023-08-27T21:41:34+02:00
-updated: 2023-08-31T18:50:06+02:00
+updated: 2023-08-31T18:54:31+02:00
 ---
 
 ## Introduction
@@ -72,6 +72,17 @@ In my case I have a script which updates my read books list under [[Books]]
 When the commands are set up and I'm ready to publish, I open the Command Palette, and type `qpub` which is the shorthand for the entire command and hit Enter.  
 A few seconds later, it has been pushed to my GitHub repository which will build the page and update my page a few minutes later.
 ![[images/Pasted image 20230831184738.png]]
+
+Publish in action:
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/I2tLVYJ9UoQ?si=yNa8_xgCjrHvBmWD"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen
+></iframe>
 
 
 
