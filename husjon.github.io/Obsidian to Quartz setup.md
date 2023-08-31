@@ -19,7 +19,7 @@ This also reduced the publishing script I created for the previous setup ([[Obsi
 ## Upgrading
 If you're upgrading I would recommend reading the https://quartz.jzhao.xyz/migrating-from-Quartz-3 guide from the documentation.
 
-If you're new to Quartz, check out Getting Started section on https://quartz.jzhao.xyz/.
+If you're new to Quartz, check out Getting Started section on https://quartz.jzhao.xyz/
 
 
 
