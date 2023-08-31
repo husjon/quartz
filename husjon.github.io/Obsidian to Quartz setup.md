@@ -10,22 +10,23 @@ updated: 2023-08-31T19:05:02+02:00
 
 ## Introduction
 I originally wrote about my [[Obsidian to Quartz setup v3]] at the end of last year.  
-Now since Quartz v4 is out, here is my current setup.
+Now since Quartz v4 is out, this is my current setup.
 
 First of, [Jacky Zhao](https://github.com/jackyzha0) has done amazing work with reducing dependencies of the Quartz project and now uses `npx` to build, publish and do local development instead of previously using a `go` and in particular the `hugo-obsidian` package.  
 This also reduced the publishing script I created for the previous setup ([[Obsidian to Quartz setup v3#Publishing my notes.|Publishing my notes]]).
 
 
 ## Upgrading
-If you're upgrading I would recommend reading the https://quartz.jzhao.xyz/migrating-from-Quartz-3 guide from the documentation.
-
+If you're upgrading I would recommend reading the https://quartz.jzhao.xyz/migrating-from-Quartz-3 guide from the documentation.  
 If you're new to Quartz, check out Getting Started section on https://quartz.jzhao.xyz/
 
 
 
 ## The Setup
+Now, my setup is quite similar my [[Obsidian to Quartz setup v3#Preparing the Obsidian Vault|original writeup]], however some things have changed.
+
 ### Folder Structure
-My folder structure is similar to my [[Obsidian to Quartz setup v3#Preparing the Obsidian Vault|original writeup]], however it is now moved into `~/Documents/Obsidian` so that everything is grouped together.
+My folder stucture changes are minor, but everything is now moved into `~/Documents/Obsidian` so that everything is grouped together.
 * **Main Vault** lives under `~/Documents/Obsidian/Vault`
 * **Quartz** lives under `~/Documents/Obsidian/quartz`
 * **Quartz** is symlinked into my **Main Vault**  
