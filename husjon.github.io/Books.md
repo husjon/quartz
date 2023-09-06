@@ -2,7 +2,7 @@
 title: Books
 tags: books
 created: 2023-08-27T23:21:03+02:00
-updated: 2023-09-06T19:21:07+02:00
+updated: 2023-09-06T19:22:52+02:00
 ---
 
 | Title | Author | My rating | Read (Year-Month-Day) |
