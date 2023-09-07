@@ -11,6 +11,7 @@ const config: QuartzConfig = {
     },
     baseUrl: "husjon.github.io",
     ignorePatterns: ["private", "templates"],
+    defaultDateType: "modified",
     theme: {
       typography: {
         header: "Schibsted Grotesk",
