@@ -1,13 +1,15 @@
 ---
 title: Obsidian to Quartz setup v3
 created: 2022-11-25T23:03:07+01:00
-updated: 2023-08-30T18:11:47+02:00
+updated: 2023-09-17T20:16:37+02:00
 tags:
   - obsidian
   - quartz
   - quartz-v3
 ---
 ## Introduction
+This is an older setup, see [[Obsidian to Quartz setup]] for the current.
+
 The other day I decided that I'd wanted to start publishing some of my ideas.  
 Finding that [Obsidian Publish](https://obsidian.md/pricing) was a bit too pricey for the occasional publish I decided to look at alternatives.
 
