@@ -1,8 +1,8 @@
 ---
-title: "Hobbies"
-tags:
+title: Hobbies
+tags: 
 created: 2022-11-26T20:57:26+01:00
-updated: 2023-08-27T23:39:53+02:00
+updated: 2023-09-18T17:20:23+02:00
 ---
 
 I have a few different hobbies, some of which are:

@@ -1,6 +1,8 @@
 ---
-title: "Books"
+title: Books
 tags: books
+created: 2023-09-17T23:57:05+02:00
+updated: 2023-09-18T17:20:23+02:00
 ---
 
 | Title | Author | My rating | Read (Year-Month-Day) |
