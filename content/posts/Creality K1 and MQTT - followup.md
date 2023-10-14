@@ -7,7 +7,7 @@ tags:
   - hacking
   - followup
 created: 2023-09-17T15:49:08+02:00
-updated: 2023-10-14T18:55:15+02:00
+updated: 2023-10-14T18:58:25+02:00
 ---
 ## Introduction
 This is a followup to [[Creality K1 and MQTT]].
@@ -45,7 +45,7 @@ I decided to go for fluidd since that's what I'm used to.
 * `wget https://raw.githubusercontent.com/CrealityOfficial/K1_Series_Annex/main/fluidd/fluidd/fluidd.sh`
 * `wget https://raw.githubusercontent.com/CrealityOfficial/K1_Series_Annex/main/fluidd/fluidd/fluidd.tar`
 4. Run the setup script:
-   * `sh fluidd.sh`
+   * `sh fluidd.sh install`
 5. After the files been extracted, it will start the services and the web interface will be available within a few seconds.
    * `http://PRINTER_IP:4408`
    
@@ -57,9 +57,9 @@ I decided to go for fluidd since that's what I'm used to.
 * `wget https://raw.githubusercontent.com/CrealityOfficial/K1_Series_Annex/main/mainsail/mainsail/mainsail.sh`
 * `wget https://raw.githubusercontent.com/CrealityOfficial/K1_Series_Annex/main/mainsail/mainsail/mainsail.tar`
 4. Run the setup script:
-   * `sh fluidd.sh install`
+   * `sh mainsail.sh install`
 5. After the files been extracted, it will start the services and the web interface will be available within a few seconds.
-   * `http://PRINTER_IP:4408`
+   * `http://PRINTER_IP:4409`
 
 
 ## Checking what is running on the printer
