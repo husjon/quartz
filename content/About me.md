@@ -1,7 +1,8 @@
 ---
-title: About Me
 created: 2022-11-24T00:12:52+01:00
-updated: 2023-10-25T21:40:26+02:00
+updated: 2023-11-01T21:24:15+01:00
+title: About Me
+publish: true
 ---
 
 Hi there, my name is Jon Erling.

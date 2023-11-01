@@ -1,11 +1,12 @@
 ---
 title: Modelling with Blender for the 3D printer
 created: 2023-07-19T19:53:11+02:00
-updated: 2023-10-25T21:40:26+02:00
+updated: 2023-11-01T21:21:58+01:00
 tags:
   - 3d_printing
   - 3d_modelling
   - blender
+publish: true
 ---
 When using the default settings in Blender (Metric and a scale of 1), PrusaSlicer tends to be very unsure as to which kind of dimensions were used.  
 It will ask if you want to recalculate the dimensions as seen below.

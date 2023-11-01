@@ -1,8 +1,8 @@
 ---
-title: Hobbies
-tags: 
 created: 2022-11-26T20:57:26+01:00
-updated: 2023-10-25T21:40:26+02:00
+updated: 2023-11-01T21:22:11+01:00
+title: Hobbies
+publish: true
 ---
 
 I have a few different hobbies, some of which are:

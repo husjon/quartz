@@ -1,8 +1,9 @@
 ---
+created: 2022-12-24T01:33:18+01:00
+updated: 2023-11-01T21:24:24+01:00
 title: 2023 New Year resolution
 tags: new year resolution
-created: 2022-12-24T01:33:18+01:00
-updated: 2023-11-01T15:10:02+01:00
+publish: true
 ---
 
 I'm not much of a New Year Resolution type of person, but this year I will try to focus on the following:

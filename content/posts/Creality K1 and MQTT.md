@@ -1,12 +1,12 @@
 ---
 created: 2023-07-24T16:25:18+02:00
-updated: 2023-10-25T21:40:26+02:00
+updated: 2023-11-01T21:24:46+01:00
 title: Creality K1 and MQTT
-enableToc: true
 tags:
   - creality
   - 3d_printing
   - hacking
+publish: true
 ---
 ## Introduction
 Back in June we were able to get into the Creality K1 linux environment with an exploit made public by K3D[^k3d] and translated by 3DPrintSOS[^3dprintsos].  

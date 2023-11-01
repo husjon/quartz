@@ -1,11 +1,12 @@
 ---
+created: 2022-11-27T19:35:16+01:00
+updated: 2023-11-01T21:24:01+01:00
 title: Amazon Kindle Download Helper
 tags:
   - programming
   - javascript
   - tampermonkey
-created: 2022-11-27T19:35:16+01:00
-updated: 2023-10-25T21:40:26+02:00
+publish: true
 ---
 
 After having acquired a few books for my Kindle from Amazon, I've found that backing these up is extremely tedious.  

@@ -1,18 +1,20 @@
 ---
 title: Books
 tags: books
-created: 2023-08-27T23:21:03+02:00
-updated: 2023-10-25T21:40:26+02:00
+created: 2023-09-07T01:33:30+02:00
+updated: 2023-11-01T21:25:26+01:00
 ---
 
 | Title | Author | My rating | Read (Year-Month-Day) |
 | ----- | ------ | --------- | ---- |
+| 1984                                                         | George Orwell                  | 0 | Currently Reading |
 | 2001                                                         | Arthur C. Clarke               | 5 | 2023-02-07 |
 | After the Fall Before the Fall During the Fall               | Nancy Kress                    | 4 | 2019-12-29 |
 | Alive                                                        | Stephanie Erickson             | 5 | 2022-06-21 |
 | All Systems Red                                              | Martha Wells                   | 4 | 2019-09-22 |
 | Artificial Condition                                         | Martha Wells                   | 5 | 2019-12-20 |
 | Binti                                                        | Nnedi Okorafor                 | 4 | 2023-02-14 |
+| Boneshaker                                                   | Cherie Priest                  | 5 | 2023-10-24 |
 | Contagion                                                    | Erin Bowman                    | 5 | 2023-06-16 |
 | Dark Matter                                                  | Blake Crouch                   | 5 | 2022-07-06 |
 | Dying Light                                                  | Raymond Benson                 | 4 | 2020-01-03 |

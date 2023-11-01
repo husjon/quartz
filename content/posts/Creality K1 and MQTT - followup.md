@@ -1,13 +1,13 @@
 ---
+created: 2023-09-17T15:49:08+02:00
+updated: 2023-11-01T21:24:54+01:00
 title: Creality K1 and MQTT - follow-up
-enableToc: true
 tags:
   - creality
   - 3d_printing
   - hacking
   - followup
-created: 2023-09-17T15:49:08+02:00
-updated: 2023-10-25T21:40:26+02:00
+publish: true
 ---
 ## Introduction
 This is a followup to [[Creality K1 and MQTT]].

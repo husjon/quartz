@@ -1,12 +1,12 @@
 ---
+created: 2023-07-13T19:29:40+02:00
+updated: 2023-11-01T21:25:09+01:00
 title: Hacking into things
 tags:
   - linux
   - hacking
   - programming
-created: 2023-07-13T19:29:40+02:00
-updated: 2023-10-25T21:40:26+02:00
-enableToc: true
+publish: true
 ---
 
 This has been something that I've had an interest for for many years and have dabbled in every now and then when I had the chance.

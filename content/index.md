@@ -1,8 +1,8 @@
 ---
-title: Welcome
-enableToc: false
 created: 2022-11-22T20:37:22+01:00
-updated: 2023-11-01T21:05:11+01:00
+updated: 2023-11-01T21:22:03+01:00
+title: Welcome
+publish: true
 ---
 
 Hi and welcome to my little corner on the internet.  
