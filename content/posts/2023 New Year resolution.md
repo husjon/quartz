@@ -2,7 +2,7 @@
 title: 2023 New Year resolution
 tags: new year resolution
 created: 2022-12-24T01:33:18+01:00
-updated: 2023-10-25T21:40:26+02:00
+updated: 2023-11-01T15:10:02+01:00
 ---
 
 I'm not much of a New Year Resolution type of person, but this year I will try to focus on the following:
@@ -17,7 +17,7 @@ My average book size were around 250 pages.
 For 2023, I'll aim for 12.  
 I find it better to aim for a lower goal and crushing it, rather than aiming to high and not succeeding.
 
-List of [[Books]] I've read so far.
+List of [[../Books]] I've read so far.
 
 
 # Drawing
