@@ -1,6 +1,6 @@
 ---
 created: 2022-11-27T19:35:16+01:00
-updated: 2023-11-01T21:24:01+01:00
+updated: 2023-11-01T21:46:54+01:00
 title: Amazon Kindle Download Helper
 tags:
   - programming
@@ -26,7 +26,7 @@ Tampermonkey allows you to do quite a few cool things like changing colors, addi
 It's been a while since I've done any work with Javascript and jQuery, so revisiting it was quite refreshing.
 
 After spending some time finding which elements I needed for selectors etc, I came up with a simple solution which re-uses the existing checkboxes and adds a button to download the selected books.
-![[../images/amazon_download_button.png]]
+![[public/images/amazon_download_button.png]]
 
 With this helper, we can now use the existing checkboxes or **Select All**, then the newly added **Download Selected** button.  
 The script then iterates over each book on the current page, then starts the download process for each.

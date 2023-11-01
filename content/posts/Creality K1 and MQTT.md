@@ -1,6 +1,6 @@
 ---
 created: 2023-07-24T16:25:18+02:00
-updated: 2023-11-01T21:24:46+01:00
+updated: 2023-11-01T21:46:55+01:00
 title: Creality K1 and MQTT
 tags:
   - creality
@@ -20,7 +20,7 @@ It will enable Fluidd then reboot the printer and finally print out the address 
 
 ## Discovery
 After some more poking around I found that the machine is also calling home using MQTT.
-![[../images/creality_k1_mqtt_connection.png]]
+![[../public/images/creality_k1_mqtt_connection.png]]
 **Note**: In my case I've already blocked it hence the `SYS-SENT` state.
 
 The address seem to be owned by Alibaba.com LLC and located in Charlottesville, Virginia, United States (see: https://db-ip.com/47.253.214.226).  
@@ -32,7 +32,7 @@ The server itself requires authentication.
 After some more more poking around and doing a packet capture it seem to not use a password to connect. 
 The only thing I can see that it uses is a Client ID and a Username.
 ~~Since I'm not entirely sure if~~ the username is on a per machine I've blurred it out partially.
-![[../images/creality_k1_mqtt_packet_capture.png]]
+![[../public/images/creality_k1_mqtt_packet_capture.png]]
 
 Using the paho mqtt library for python I was able to connect and confirm that the username is tied to the machine as once I allowed the printer to connect my paho connection was dropped.
 
@@ -114,7 +114,7 @@ Since I do not intend on using their application or platform I've blocked it in 
 
 ## Open Source Firmware
 Creality has announced that they will be releasing an open source firmware in Septempber[^creality_twitter_opensource] I will do a follow-up when that has been released.
-![[../images/creality_k1_k1max_opensource_announcement.png]]
+![[../public/images/creality_k1_k1max_opensource_announcement.png]]
 
 [^fluidd]: https://docs.fluidd.xyz/
 [^k3d]: https://www.youtube.com/watch?v=D8qqrK7eC1E (K3D)
