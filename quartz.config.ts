@@ -10,7 +10,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     baseUrl: "husjon.github.io",
-    ignorePatterns: ["templates", "!(public)**/!(*.md)", "!(*.md)"],
+    ignorePatterns: ["templates", "!(public)/**/!(*.md)", "!(*.md)"],
     defaultDateType: "modified",
     theme: {
       typography: {
