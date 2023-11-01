@@ -5,7 +5,7 @@ tags:
   - quartz
   - quartz-v4
 created: 2023-08-27T21:41:34+02:00
-updated: 2023-08-31T19:08:48+02:00
+updated: 2023-10-25T21:40:26+02:00
 ---
 
 ## Introduction

@@ -2,7 +2,7 @@
 title: Welcome
 enableToc: false
 created: 2022-11-22T20:37:22+01:00
-updated: 2023-09-17T20:06:40+02:00
+updated: 2023-10-25T21:40:26+02:00
 ---
 
 Hi and welcome to my little corner on the internet.  
@@ -16,6 +16,7 @@ For now I'd like to share my [[Obsidian to Quartz setup]] and my little [[Amazon
 If you'd like to ask me a question of leave a comment, please [create an issue](https://github.com/husjon/husjon/issues/new) or message me on <a rel="me" href="https://fosstodon.org/@husjon">Mastodon</a> and I'll get back to you as soon as I can.
 
 And if got all the way here, Thank you 💗
+
 
 
 [mastodon_link]: https://fosstodon.org/@husjon

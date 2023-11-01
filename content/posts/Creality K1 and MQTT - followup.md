@@ -7,7 +7,7 @@ tags:
   - hacking
   - followup
 created: 2023-09-17T15:49:08+02:00
-updated: 2023-10-14T18:58:25+02:00
+updated: 2023-10-25T21:40:26+02:00
 ---
 ## Introduction
 This is a followup to [[Creality K1 and MQTT]].
