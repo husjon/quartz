@@ -2,7 +2,7 @@
 title: Books
 tags: books
 created: 2023-09-07T01:33:30+02:00
-updated: 2023-11-01T21:40:55+01:00
+updated: 2023-11-01T21:43:58+01:00
 ---
 
 | Title | Author | My rating | Read (Year-Month-Day) |
@@ -26,7 +26,7 @@ updated: 2023-11-01T21:40:55+01:00
 | Marsboeren                                                   | Andy Weir                      | 5 | 2023-08-27 |
 | Mycophoria                                                   | Tom G.H. Adams                 | 5 | 2023-04-12 |
 | Network Effect                                               | Martha Wells                   | 5 | 2022-05-22 |
-| Neuromancer                                                  | William Gibson                 | 0 | Currently Reading |
+| Neuromancer                                                  | William Gibson                 | 4 | 2023-10-02 |
 | Recursion                                                    | Blake Crouch                   | 5 | 2022-07-13 |
 | Remote Control                                               | Nnedi Okorafor                 | 4 | 2022-11-17 |
 | Rogue Protocol                                               | Martha Wells                   | 5 | 2019-12-22 |
