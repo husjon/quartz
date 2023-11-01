@@ -30,6 +30,8 @@ tags:
 books = []
 # for book in sorted(glob.glob('*.md', root_dir=books_folder)):
 for book in sorted(glob.glob(f"{books_folder}/*.md")):
+    if "/Books.md" in book:
+        continue
     with open(f"{book}", "r", encoding="utf-8") as f:
         content = f.read()
 
