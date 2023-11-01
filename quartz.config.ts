@@ -10,7 +10,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     baseUrl: "husjon.github.io",
-    ignorePatterns: ["private", "templates"],
+    ignorePatterns: ["templates", "!(public)**/!(*.md)", "!(*.md)"],
     defaultDateType: "modified",
     theme: {
       typography: {
@@ -56,7 +56,7 @@ const config: QuartzConfig = {
       Plugin.Latex({ renderEngine: "katex" }),
       Plugin.Description(),
     ],
-    filters: [Plugin.RemoveDrafts()],
+    filters: [Plugin.ExplicitPublish()],
     emitters: [
       Plugin.AliasRedirects(),
       Plugin.ComponentResources({ fontOrigin: "googleFonts" }),
