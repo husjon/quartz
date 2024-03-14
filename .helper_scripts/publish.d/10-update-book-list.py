@@ -10,7 +10,7 @@ HOME = os.environ.get("HOME")
 quartz_content_folder = os.environ.get("QUARTZ_FOLDER") + "/content"
 obsidian_vault_folder = os.environ.get("OBSIDIAN_VAULT_FOLDER")
 quartz_books_summary_file = f"{quartz_content_folder}/Books.md"
-books_folder = f"{obsidian_vault_folder}/Books"
+books_folder = f"{obsidian_vault_folder}/99. External data/Goodreads Sync"
 
 frontmatter_pattern = re.compile(
     r"""
