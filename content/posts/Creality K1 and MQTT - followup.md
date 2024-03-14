@@ -1,6 +1,6 @@
 ---
 created: 2023-09-17T15:49:08+02:00
-updated: 2023-11-01T21:24:54+01:00
+updated: 2023-11-11T19:01:33+01:00
 title: Creality K1 and MQTT - follow-up
 tags:
   - creality

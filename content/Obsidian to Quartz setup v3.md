@@ -1,7 +1,7 @@
 ---
 title: Obsidian to Quartz setup v3
 created: 2022-11-25T23:03:07+01:00
-updated: 2023-11-01T21:21:37+01:00
+updated: 2023-11-11T19:01:33+01:00
 tags:
   - obsidian
   - quartz

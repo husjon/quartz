@@ -1,6 +1,6 @@
 ---
 created: 2022-11-27T19:35:16+01:00
-updated: 2023-11-01T21:46:54+01:00
+updated: 2023-11-11T19:01:33+01:00
 title: Amazon Kindle Download Helper
 tags:
   - programming

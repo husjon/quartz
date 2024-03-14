@@ -1,12 +1,12 @@
 ---
 created: 2022-11-22T20:37:22+01:00
-updated: 2023-11-01T21:22:03+01:00
+updated: 2023-12-14T16:02:25+01:00
 title: Welcome
 publish: true
 ---
 
-Hi and welcome to my little corner on the internet.  
-Introverted, self-taught programmer with different hobbies and ideas.  
+Hi and welcome to my little corner on the internet.
+Introverted, self-taught programmer with different hobbies and ideas.
 I do have an [[About me]] section if you want to know more, alternatively here are some [[Hobbies]] 🤗
 
 Over time I will be trying to do some write-ups of different ideas I have / projects I’ve worked on.

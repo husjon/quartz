@@ -1,6 +1,6 @@
 ---
 created: 2023-07-13T19:29:40+02:00
-updated: 2023-11-01T21:25:09+01:00
+updated: 2023-11-11T19:01:33+01:00
 title: Hacking into things
 tags:
   - linux
