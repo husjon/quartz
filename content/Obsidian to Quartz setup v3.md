@@ -6,6 +6,7 @@ tags:
   - obsidian
   - quartz
   - quartz-v3
+publish: true
 ---
 ## Introduction
 This is an older setup, see [[Obsidian to Quartz setup]] for the current.
