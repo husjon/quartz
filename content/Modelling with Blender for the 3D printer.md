@@ -6,6 +6,7 @@ tags:
   - 3d_printing
   - 3d_modelling
   - blender
+publish: true
 ---
 When using the default settings in Blender (Metric and a scale of 1), PrusaSlicer tends to be very unsure as to which kind of dimensions were used.  
 It will ask if you want to recalculate the dimensions as seen below.

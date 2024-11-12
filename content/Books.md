@@ -1,6 +1,7 @@
 ---
 title: Books
 tags: books
+publish: true
 ---
 
 | Title | Author | My rating | Read (Year-Month-Day) |

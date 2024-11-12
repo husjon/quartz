@@ -6,6 +6,7 @@ tags:
   - creality
   - 3d_printing
   - hacking
+publish: true
 ---
 ## Introduction
 Back in June we were able to get into the Creality K1 linux environment with an exploit made public by K3D[^k3d] and translated by 3DPrintSOS[^3dprintsos].  
