@@ -80,4 +80,4 @@ uid=0(root) gid=0(root) groups=0(root)
 This shows us that the root user is running the commands and we're already in.  
 The only thing to do is to change the password of the root user.  
 
-What we've done in this example is what's called Remote Code Execution (RCE) or Code Injection.
+What we've done in this example is what's called Remote Code Execution (RCE) or Command Line Injection.

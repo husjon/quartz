@@ -1,5 +1,5 @@
 ---
-title: "Amazon Kindle Download Helper"
+title: Amazon Kindle Download Helper
 tags:
   - programming
   - javascript

@@ -1,5 +1,5 @@
 ---
-title: "Books"
+title: Books
 tags: books
 ---
 
