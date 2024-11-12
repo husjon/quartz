@@ -6,7 +6,6 @@ cleanup() {
     rm -f "${PID_FILE}"
     rm -f "${LOCAL_QUARTZ_PID_FILE}"
 }
-trap cleanup TERM INT EXIT
 
 BASE_DIR="$(realpath "$(dirname "$0")")"
 QUARTZ_FOLDER="${BASE_DIR}/.."
@@ -17,6 +16,7 @@ PID_FILE=/tmp/obsidian_quartz_local_server.pid
 LOCAL_QUARTZ_PID_FILE="${PID_FILE}.hugo"
 LOCAL_QUARTZ_PID=0
 
+trap cleanup TERM INT EXIT
 while [[ -f "${LOCAL_QUARTZ_PID_FILE}" ]]; do
     LOCAL_QUARTZ_PID=$(cat "${LOCAL_QUARTZ_PID_FILE}")
     kill "${LOCAL_QUARTZ_PID}"
