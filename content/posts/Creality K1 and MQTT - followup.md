@@ -1,6 +1,5 @@
 ---
 title: Creality K1 and MQTT - follow-up
-enableToc: true
 tags:
   - creality
   - 3d_printing
