@@ -1,4 +1,6 @@
-#!/bin/bash
+#! /usr/bin/env nix-shell
+#! nix-shell -i bash -p nodePackages.npm nodejs
+
 
 BASE_DIR="$(realpath "$(dirname "$0")")"
 QUARTZ_FOLDER="${BASE_DIR}/.."
