@@ -1,6 +1,13 @@
 #! /usr/bin/env nix-shell
 #! nix-shell -i bash -p nodePackages.npm nodejs
 
+cleanup() {
+    kill ${LOCAL_QUARTZ_PID}
+    rm -f "${PID_FILE}"
+    rm -f "${LOCAL_QUARTZ_PID_FILE}"
+}
+trap cleanup TERM INT EXIT
+
 BASE_DIR="$(realpath "$(dirname "$0")")"
 QUARTZ_FOLDER="${BASE_DIR}/.."
 
@@ -17,9 +24,6 @@ while [[ -f "${LOCAL_QUARTZ_PID_FILE}" ]]; do
 done
 
 if [[ ! -f "${PID_FILE}" ]]; then
-    trap 'kill ${LOCAL_QUARTZ_PID}' TERM INT
-    trap 'rm "${PID_FILE}"; rm "${LOCAL_QUARTZ_PID_FILE}"' EXIT
-
     cd "${QUARTZ_FOLDER}" || exit 1
 
     timeout --preserve-status 1h npx quartz build --serve &
