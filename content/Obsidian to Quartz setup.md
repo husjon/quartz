@@ -34,7 +34,7 @@ My folder stucture changes are minor, but everything is now moved into `~/Docume
   This makes Quartz available from within my main vault so that I can quickly move notes over and is the same way that I did originally.
 
 Screenshot for reference:  
-![[images/Pasted image 20230831183633.png]]
+![[images/obsidian-vault_showing_quartz_symlink.png]]
 
 ### Publishing and local development
 As for publishing and local development I still use the [Shell commands](https://obsidian.md/plugins?search=obsidian-shellcommands) Plugin.
@@ -59,7 +59,7 @@ In case I just need to start the server, I also have this command which just sta
   ~/Documents/Obsidian/quartz/.helper_scripts/local.sh
   ```
 Screenshot for reference:
-![[images/Pasted image 20230831183348.png]]
+![[images/quartz-obsidian_shell_commands_overview.png]]
 
 #### Helper Scripts
 I've made my helper scripts public in my repository under https://github.com/husjon/husjon.github.io/tree/v4/.helper_scripts
@@ -74,7 +74,7 @@ In my case I have a script which updates my read books list under [[Books]]
 #### Usage
 When the commands are set up and I'm ready to publish, I open the Command Palette, and type `qpub` which is the shorthand for the entire command and hit Enter.  
 A few seconds later, it has been pushed to my GitHub repository which will build the page and update my page a few minutes later.
-![[images/Pasted image 20230831184738.png]]
+![[images/quartz_obsidian_command_palette-publish.png]]
 
 Publish in action:
 <iframe
@@ -90,4 +90,4 @@ Publish in action:
 
 
 Alternatively for the local server, I type `qlocb` for also opening the browser, or `qloc` for just the server.
-![[images/Pasted image 20230831184610.png]]
+![[images/quartz_obsidian_command_palette-local.png]]
