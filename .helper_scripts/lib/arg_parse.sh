@@ -1,5 +1,6 @@
 export VAULT_PATH=""
 export QUARTZ_PATH="$(realpath "$(dirname "$0")/..")"
+export OPEN_BROWSER=false
 
 check_path() {
     ls "$1" >/dev/null 2>&1
@@ -21,6 +22,9 @@ while [[ $# -gt 0 ]]; do
         QUARTZ_PATH=$(realpath "$2")
         check_path "${QUARTZ_PATH}/quartz.config.ts" "Invalid Quartz path"
         shift
+        ;;
+    --browser)
+        OPEN_BROWSER=true
         ;;
     esac
     shift # always shift at least once
