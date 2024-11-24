@@ -1,6 +1,7 @@
 export VAULT_PATH=""
 export QUARTZ_PATH="$(realpath "$(dirname "$0")/..")"
 export OPEN_BROWSER=false
+export STOP_LOCAL_SERVER=false
 
 check_path() {
     ls "$1" >/dev/null 2>&1
@@ -25,6 +26,9 @@ while [[ $# -gt 0 ]]; do
         ;;
     --browser)
         OPEN_BROWSER=true
+        ;;
+    --stop-server)
+        STOP_LOCAL_SERVER=true
         ;;
     esac
     shift # always shift at least once

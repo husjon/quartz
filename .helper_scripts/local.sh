@@ -14,6 +14,11 @@ cleanup() {
 
 trap cleanup EXIT TERM INT
 
+if [[ "$STOP_LOCAL_SERVER" = true ]]; then
+    cleanup
+    exit
+fi
+
 if [[ -f "${PID_FILE}" ]]; then
     cleanup
     sleep 0.5
