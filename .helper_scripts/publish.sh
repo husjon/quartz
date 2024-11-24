@@ -1,27 +1,37 @@
 #!/usr/bin/env bash
 
-# set -e  # Exit on Error
-HOOKS_SUCCESS=true
+cd "$(realpath "$(dirname "$0")")"
+
 (
-    export BASE_DIR="$(dirname "$(realpath "$0")")"
-    export QUARTZ_FOLDER="$(realpath ${BASE_DIR}/..)"
+    set -e # Stop on error
+
+    source ./lib/arg_parse.sh
 
     touch ~/.quartz_publish.env
     source ~/.quartz_publish.env
 
     # Pre-Publish hooks
-    cd "${BASE_DIR}" || exit 1
+    HOOKS_RUN_SUCCESSFULLY=true
     for f in ./publish.d/*; do
         echo "Running pre-publish hook: $f"
-        ${f} 2>&1 || HOOKS_SUCCESS=false
-        echo
+        ${f} 2>&1 || HOOKS_RUN_SUCCESSFULLY=false
+        echo -e "\n\n"
+
+        [[ "$HOOKS_RUN_SUCCESSFULLY" = false ]] && break
     done
 
-    if [ "$HOOKS_SUCCESS" = true ]; then
-        cd "${QUARTZ_FOLDER}" || exit 1
-
-        npx quartz sync && exit 0
+    if [[ "$HOOKS_RUN_SUCCESSFULLY" = true ]]; then
+        echo "Syncing ..."
+        cd ..
+        npx quartz sync
+        echo -e "\n"
+    else
+        echo -e "Error during publish\n"
     fi
+)
 
-    read -r
-) | tee /tmp/quartz_pulish.log
+# Wait for Enter key to be pressed prior to exiting
+echo "Press Enter to close"
+read -r
+
+# vim: sw=4
