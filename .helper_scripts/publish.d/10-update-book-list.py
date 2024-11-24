@@ -1,16 +1,29 @@
 #!/usr/bin/env python
 
-import datetime
 import yaml
 import glob
 import os
 import re
 
-HOME=os.environ.get('HOME')
-quartz_content_folder=os.environ.get('QUARTZ_FOLDER') + '/content'
-obsidian_vault_folder=os.environ.get('OBSIDIAN_VAULT_FOLDER')
-quartz_books_summary_file = f'{quartz_content_folder}/Books.md'
-books_folder = f'{obsidian_vault_folder}/Books'
+
+OBSIDIAN_VAULT_PATH = os.environ.get('OBSIDIAN_VAULT_PATH', '')
+if OBSIDIAN_VAULT_PATH == '':
+    print("OBSIDIAN_VAULT_PATH not set")
+    exit(1)
+
+QUARTZ_VAULT_PATH = os.environ.get('QUARTZ_VAULT_PATH', '')
+if QUARTZ_VAULT_PATH == '':
+    print("QUARTZ_VAULT_PATH not set")
+    exit(1)
+
+QUARTZ_PATH = os.environ.get('QUARTZ_PATH', '')
+if QUARTZ_PATH == '':
+    print("QUARTZ_PATH not set")
+    exit(1)
+
+QUARTZ_BOOKS_SUMMARY_FILE = f'{QUARTZ_VAULT_PATH}/Books.md'
+BOOKS_FOLDER = f'{OBSIDIAN_VAULT_PATH}/99. External data/Goodreads Sync/'
+
 
 frontmatter_pattern = re.compile(r'''
 ---\n
@@ -25,8 +38,7 @@ tags:
 ''', flags=re.VERBOSE)
 
 books = []
-#for book in sorted(glob.glob('*.md', root_dir=books_folder)):
-for book in sorted(glob.glob(f'{books_folder}/*.md')):
+for book in sorted(glob.glob(f'{BOOKS_FOLDER}/*.md')):
     with open(f'{book}', 'r') as f:
         content = f.read()
 
@@ -38,7 +50,7 @@ for book in sorted(glob.glob(f'{books_folder}/*.md')):
     books.append(book_frontmatter)
 
 
-with open(quartz_books_summary_file, 'w+') as fh:
+with open(QUARTZ_BOOKS_SUMMARY_FILE, 'w+') as fh:
     output = [
         '---',
         'title: "Books"',
@@ -46,15 +58,19 @@ with open(quartz_books_summary_file, 'w+') as fh:
         '---',
         '',
     ]
-    output.append(f'| Title | Author | My rating | Read (Year-Month-Day) |')
-    output.append(f'| ----- | ------ | --------- | ---- |')
+    output.append('| Title | Author | My rating | Read (Year-Month-Day) |')
+    output.append('| ----- | ------ | --------- | ---- |')
     for book in books:
         if "currently-reading" in book['tags']:
             book['date_read'] = 'Currently Reading'
         else:
             book['date_read'] = book['date_read'].strftime('%Y-%m-%d')
 
-        output.append('| {title:<60} | {author:<30} | {rating} | {date_read:<10} |'.format(**book))
-
+        output.append(
+            '| {title:<60} | {author:<30} | {rating} | {date_read:<10} |'
+            .format(**book)
+        )
 
     fh.write('\n'.join(output))
+
+    print(f'Updated {QUARTZ_BOOKS_SUMMARY_FILE}')
