@@ -24,7 +24,7 @@ if [[ -f "${PID_FILE}" ]]; then
     sleep 0.5
 fi
 
-test -z $VAULT_PATH && echo "VAULT_PATH not set" && exit 1
+test -z $QUARTZ_VAULT_PATH && echo "QUARTZ_VAULT_PATH not set" && exit 1
 test -z $QUARTZ_PATH && echo "QUARTZ_PATH not set" && exit 1
 
 pushd ..

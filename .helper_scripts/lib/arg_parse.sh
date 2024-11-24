@@ -1,4 +1,4 @@
-export VAULT_PATH=""
+export QUARTZ_VAULT_PATH=""
 export QUARTZ_PATH="$(realpath "$(dirname "$0")/..")"
 export OPEN_BROWSER=false
 export STOP_LOCAL_SERVER=false
@@ -15,8 +15,8 @@ check_path() {
 while [[ $# -gt 0 ]]; do
     case "${1}" in
     --quartz-vault)
-        VAULT_PATH=$(realpath "${2}")
-        check_path "${VAULT_PATH}/../.obsidian" "Invalid Obsidian vault path"
+        QUARTZ_VAULT_PATH=$(realpath "${2}")
+        check_path "${QUARTZ_VAULT_PATH}" "Invalid Quartz vault path"
         shift
         ;;
     --quartz-repo)
