@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 BASE_DIR="$(realpath "$(dirname "$0")")"
 QUARTZ_FOLDER="${BASE_DIR}/.."

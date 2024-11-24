@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 rsync -av \
     "${OBSIDIAN_VAULT_FOLDER}/0. Quartz/" \

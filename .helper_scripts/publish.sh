@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # set -e  # Exit on Error
 HOOKS_SUCCESS=true
