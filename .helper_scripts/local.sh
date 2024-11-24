@@ -1,45 +1,52 @@
 #!/usr/bin/env bash
 
-BASE_DIR="$(realpath "$(dirname "$0")")"
-QUARTZ_FOLDER="${BASE_DIR}/.."
+cd "$(realpath "$(dirname "$0")")"
 
-ARGS=${1:-""}
+source ./lib/arg_parse.sh
 
 PID_FILE=/tmp/obsidian_quartz_local_server.pid
-LOCAL_QUARTZ_PID_FILE="${PID_FILE}.hugo"
-LOCAL_QUARTZ_PID=0
 
+cleanup() {
+    QUARTZ_PID=$(cat "${PID_FILE}" 2>/dev/null)
+    kill ${QUARTZ_PID} >/dev/null 2>&1
+    rm -f "${PID_FILE}"
+}
 
-while [[ -f "${LOCAL_QUARTZ_PID_FILE}" ]]; do
-    LOCAL_QUARTZ_PID=$(cat "${LOCAL_QUARTZ_PID_FILE}")
-    kill "${LOCAL_QUARTZ_PID}"
+trap cleanup EXIT TERM INT
+
+if [[ -f "${PID_FILE}" ]]; then
+    cleanup
     sleep 0.5
+fi
+
+test -z $VAULT_PATH && echo "VAULT_PATH not set" && exit 1
+test -z $QUARTZ_PATH && echo "QUARTZ_PATH not set" && exit 1
+
+pushd ..
+timeout --preserve-status 1h npx quartz build --serve &
+QUARTZ_PID=$!
+echo ${QUARTZ_PID} >"${PID_FILE}"
+popd
+
+notify-send -u low "Quartz" "Starting local server"
+sleep 3 # allow the server to start up before checking
+_SERVER_STARTED=false
+for i in {1..60}; do
+    curl http://localhost:8080 --silent >/dev/null && _SERVER_STARTED=true && break
+    sleep 1
 done
 
-if [[ ! -f "${PID_FILE}" ]]; then
-    trap 'kill ${LOCAL_QUARTZ_PID}' TERM INT
-    trap 'rm "${PID_FILE}"; rm "${LOCAL_QUARTZ_PID_FILE}"' EXIT
+if [[ "$_SERVER_STARTED" = true ]]; then
+    notify-send "Quartz" "Started local server"
 
-    cd "${QUARTZ_FOLDER}" || exit 1
+    if [[ "$OPEN_BROWSER" = true ]]; then
+        xdg-open http://localhost:8080 >/dev/null 2>&1 &
+    fi
 
-    timeout --preserve-status 1h npx quartz build --serve &
-    LOCAL_QUARTZ_PID=$!
-    echo "${LOCAL_QUARTZ_PID}" > "${LOCAL_QUARTZ_PID_FILE}"
-
-    echo $$ > "${PID_FILE}"
-
-    case $ARGS in
-        browser)
-            for i in {1..10}; do
-                curl localhost:8080 --silent > /dev/null && break
-                sleep 1;
-            done
-
-            notify-send "Quartz" "Started local server"
-            xdg-open http://localhost:8080 &
-        ;;
-    esac
-
-    wait "${LOCAL_QUARTZ_PID}" && \
-        notify-send "Quartz" "Stopped local server"
+    wait $QUARTZ_PID
+    notify-send "Quartz" "Stopped local server"
+else
+    notify-send -u critical "Quartz" "Failed to start local server"
 fi
+
+# vim: sw=4
