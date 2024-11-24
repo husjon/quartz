@@ -1,4 +1,7 @@
-#!/usr/bin/env python
+#! /usr/bin/env nix-shell
+#! nix-shell -i python3 -p python3 python3Packages.pyaml
+# Note: replace shebang above with "#!/usr/bin/env python" for non NixOS systems
+
 
 import yaml
 import glob

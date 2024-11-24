@@ -1,4 +1,6 @@
-#!/usr/bin/env bash
+#!/usr/bin/env nix-shell
+#! nix-shell -i bash -p nodePackages.npm nodejs
+# Note: replace shebang above with "#!/usr/bin/env bash" for non NixOS systems
 
 cd "$(realpath "$(dirname "$0")")"
 
