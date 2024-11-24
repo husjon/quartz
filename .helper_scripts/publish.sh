@@ -25,6 +25,12 @@ cd "$(realpath "$(dirname "$0")")"
     if [[ "$HOOKS_RUN_SUCCESSFULLY" = true ]]; then
         echo "Syncing ..."
         cd ..
+
+        git diff
+
+        echo "Press Enter to Sync or Ctrl+C to Cancel"
+        read -r
+
         npx quartz sync
         echo -e "\n"
     else
