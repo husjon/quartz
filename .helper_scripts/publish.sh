@@ -24,7 +24,7 @@ cd "$(realpath "$(dirname "$0")")"
 
     if [[ "$HOOKS_RUN_SUCCESSFULLY" = true ]]; then
         echo "Syncing ..."
-        cd ..
+        cd "${QUARTZ_PATH}"
 
         git diff
 
