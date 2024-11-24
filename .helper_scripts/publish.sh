@@ -26,6 +26,9 @@ cd "$(realpath "$(dirname "$0")")"
         echo "Syncing ..."
         cd "${QUARTZ_PATH}"
 
+        git checkout .
+        rsync -av "${QUARTZ_VAULT_PATH}/" "${QUARTZ_PATH}/content"
+
         git diff
 
         echo "Press Enter to Sync or Ctrl+C to Cancel"
