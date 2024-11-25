@@ -1,6 +1,6 @@
 export OBSIDIAN_VAULT_PATH=""
 export QUARTZ_VAULT_PATH=""
-export QUARTZ_PATH="$(realpath "$(dirname "$0")/..")"
+export QUARTZ_PATH="$(realpath -m $(dirname $0)/..)"
 export OPEN_BROWSER=false
 export STOP_LOCAL_SERVER=false
 
