@@ -97,7 +97,7 @@ Publish in action:
 <iframe
   width="560"
   height="315"
-  src="https://www.youtube.com/embed/I2tLVYJ9UoQ?si=yNa8_xgCjrHvBmWD"
+  src="https://www.youtube.com/embed/6le11WJymng"
   title="YouTube video player"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
