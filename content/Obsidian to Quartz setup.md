@@ -26,7 +26,7 @@ If you're new to Quartz, check out Getting Started section on https://quartz.jzh
 Now, my setup is quite similar my [[Obsidian to Quartz setup v3#Preparing the Obsidian Vault|original write-up]], however some things have changed.
 
 ### Folder Structure
-My folder structure changes are minor, but everything is now moved into `~/Documents/Obsidian` so that everything is grouped together.
+My folder structure changes are minor, now everything is now moved into `~/Documents/Obsidian` so that everything is grouped together.
 * **Main Vault** lives under `~/Documents/Obsidian/Vault`
 * **Quartz** lives under `~/Documents/Obsidian/quartz`
 * A **Quartz** folder within my **Vault**  
