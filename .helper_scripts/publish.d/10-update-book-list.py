@@ -58,6 +58,7 @@ with open(QUARTZ_BOOKS_SUMMARY_FILE, 'w+') as fh:
         '---',
         'title: "Books"',
         'tags: books',
+        'publish: true',
         '---',
         '',
     ]
