@@ -56,7 +56,7 @@ for book in sorted(glob.glob(f'{BOOKS_FOLDER}/*.md')):
 with open(QUARTZ_BOOKS_SUMMARY_FILE, 'w+') as fh:
     output = [
         '---',
-        'title: "Books"',
+        'title: Books',
         'tags: books',
         'publish: true',
         '---',
