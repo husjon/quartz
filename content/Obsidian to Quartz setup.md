@@ -109,3 +109,6 @@ Publish in action:
 
 Alternatively for the local server, I type `qlocb` for also opening the browser, or `qloc` for just the server.
 ![[images/quartz_obsidian_command_palette-local.png]]
+
+
+If you find this setup useful, please do let me know either by starting a new discussion (e.g. Show and tell) on GitHub for [this repository](https://github.com/husjon/husjon.github.io/discussions/new/choose) or message me on <a rel="me" href="https://fosstodon.org/@husjon">Mastodon</a>.
